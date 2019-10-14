@@ -1,0 +1,46 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout << "Введите n" << endl;
+	cin >> n;
+	int k = (n-4) % 12;
+	int m = ((n-4) % 60) % 12;
+	cout << "год ";
+	if (k == 2 || k == 3 || k == 4) {
+		switch (m) {
+		case 0:cout << "зеленого "; break;
+		case 1:cout << "красного "; break;
+		case 2:cout << "желтого "; break;
+		case 3:cout << "белого "; break;
+		case 4:cout << "черного "; break;
+		}
+	}
+	else {
+		switch (m) {
+		case 0:cout << "зеленой "; break;
+		case 1:cout << "красной "; break;
+		case 2:cout << "желтой "; break;
+		case 3:cout << "белой "; break;
+		case 4:cout << "черной "; break;
+		}
+	}
+		switch (k) {
+		case 0:cout << "крысы "; break;
+		case 1:cout << "коровы "; break;
+		case 2:cout << "тигра "; break;
+		case 3:cout << "зайца "; break;
+		case 4:cout << "дракона "; break;
+		case 5:cout << "змеи "; break;
+		case 6:cout << "лошади "; break;
+		case 7:cout << "овцы "; break;
+		case 8:cout << "обезьяны "; break;
+		case 9:cout << "курицы "; break;
+		case 10:cout << "собаки "; break;
+		case 11:cout << "свиньи "; break;
+		}
+}
