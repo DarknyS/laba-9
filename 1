@@ -1,0 +1,64 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int x,y;
+	cout << "Введите номер дня,месяца" << endl;
+	cin >> x>>y;
+	int k = x / 10;
+	int m = x % 10;
+	if (m!=0 && x>19){
+		switch (k) {
+		case 2:cout << "двадцать "; break;
+		case 3:cout << "тридцать "; break;
+		}
+		switch (m) {
+		case 1:cout << "первое "; break;
+		case 2:cout << "второе "; break;
+		case 3:cout << "третье "; break;
+		case 4:cout << "четвертое "; break;
+		case 5:cout << "пятое "; break;
+		case 6:cout << "шестое "; break;
+		case 7:cout << "седьмое "; break;
+		case 8:cout << "восьмое "; break;
+		case 9:cout << "девятое "; break;
+		}
+	}
+	switch (x) {
+	case 11:cout << "одиннадцатое "; break;
+	case 12:cout << "двенадцатое "; break;
+	case 13:cout << "тринадцатое "; break;
+	case 14:cout << "четырнадцатое "; break;
+	case 15:cout << "пятнадцатое "; break;
+	case 16:cout << "шестнадцатое "; break;
+	case 17:cout << "семнадцатое "; break;
+	case 18:cout << "восемнадцатое "; break;
+	case 19:cout << "девятнадцатое "; break;
+	}
+	if (x == 10) {
+		cout << "десятое ";
+	}
+	if (x == 30) {
+		cout << "тридцатое ";
+	}
+	if (x == 20) {
+		cout << "двадцатое ";
+	}
+	switch (y) {
+	case 1:cout << "января "; break;
+	case 2:cout << "февраля "; break;
+	case 3:cout << "марта "; break;
+	case 4:cout << "апреля "; break;
+	case 5:cout << "мая "; break;
+	case 6:cout << "июня "; break;
+	case 7:cout << "июля "; break;
+	case 8:cout << "августа "; break;
+	case 9:cout << "сентября "; break;
+	case 10:cout << "октября "; break;
+	case 11:cout << "ноября "; break;
+	case 12:cout << "декабря "; break;
+   }
+}
