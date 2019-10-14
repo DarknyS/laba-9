@@ -1,0 +1,48 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int n;
+	cout << "Введите n" << endl;
+	cin >> n;
+	int m = n % 10;
+	int k = n / 10;
+	if (n >= 10 && n <= 20) {
+		switch (n) {
+		case 11:cout << "одиннадцать "; break;
+		case 12:cout << "двенадцать "; break;
+		case 13:cout << "тринадцать "; break;
+		case 14:cout << "четырнадцать "; break;
+		case 15:cout << "пятнадцать "; break;
+		case 16:cout << "шестнадцать"; break;
+		case 17:cout << "семнадцать "; break;
+		case 18:cout << "восемнадцать "; break;
+		case 19:cout << "девятнадцать "; break;
+		case 20:cout << "двадцать "; break;
+		case 10:cout << "десять "; break;
+		}
+		cout << "учебных заданий";
+	}
+	else {
+		switch (k) {
+		case 3:cout << "тридцать "; break;
+		case 2:cout << "двадцать "; break;
+		case 4:cout << "сорок "; break;
+		}
+		switch (m) {
+		case 0:cout << " учебных заданий"; break;
+		case 1:cout << "одно учебное задание "; break;
+		case 2:cout << "два учебных задания"; break;
+		case 3:cout << "три учебных задания"; break;
+		case 4:cout << "четыре учебных задания"; break;
+		case 5:cout << "пять учебных заданий"; break;
+		case 6:cout << "шесть учебных заданий"; break;
+		case 7:cout << "семь учебных заданий"; break;
+		case 8:cout << "восемь учебных заданий"; break;
+		case 9:cout << "девять учебных заданий"; break;
+		}
+	}
+}
